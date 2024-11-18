@@ -1,4 +1,7 @@
+## Install
 
+conda create -n internvl python=3.9 -y
+conda activate internvl
 
 
 ## TODO List
