@@ -21,7 +21,7 @@ def custom_image(img_paths, save_path, image_size=448):
         all_images[image_id]['images_size'] = {k: (0, 0) for k in image_files.keys()}
         imgs = {}
         for caption, image_file in image_files.items():
-            image_path = os.path.join(args.data_root, image_file.replace('../nuscenes/samples/', '/nuscenes/samples/'))
+            image_path = os.path.join(args.data_root, image_file.replace('../nuscenes/samples/', 'nuscenes/samples/'))
             img = Image.open(image_path).convert('RGB')
             old_wide, old_height = img.size
             all_images[image_id]['images_size'][caption] = (old_wide, old_height)
