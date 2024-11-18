@@ -1,19 +1,19 @@
 # Install
 
-"conda create -n internvl python=3.9 -y"
+conda create -n internvl python=3.9 -y
 
-'conda activate internvl'
+conda activate internvl
 
-‘pip install -r requirements.txt‘
+pip install -r requirements.txt
 
 ## Install flash-attn
-‘git clone https://github.com/Dao-AILab/flash-attention.git‘
+git clone https://github.com/Dao-AILab/flash-attention.git
 
-‘cd flash-attention‘
+cd flash-attention
 
-‘git checkout v2.3.6‘
+git checkout v2.3.6
 
-‘MAX_JOBS=2 python setup.py install‘
+MAX_JOBS=2 python setup.py install
 
 
 ## TODO List
